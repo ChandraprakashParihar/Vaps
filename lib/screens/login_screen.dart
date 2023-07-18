@@ -14,7 +14,8 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
-  final TextEditingController controller = TextEditingController();
+  final TextEditingController emailController = TextEditingController();
+  final TextEditingController passwordController = TextEditingController();
   bool isChecked = false;
   bool isNotVisible = true;
   @override
@@ -93,7 +94,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           InputField(
                               obscureText: false,
                               leadingIcon: Icons.person_outlined,
-                              controller: controller,
+                              controller: emailController,
                               hintText: "User Id"),
                           SizedBox(
                             height: 15.h,
@@ -121,7 +122,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                         color: AppColors.appColor,
                                       ),
                               ),
-                              controller: controller,
+                              controller: passwordController,
                               hintText: "Password"),
                           SizedBox(
                             height: 9.h,
