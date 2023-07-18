@@ -1,0 +1,3 @@
+class AdmissionEvent {
+  const AdmissionEvent();
+}

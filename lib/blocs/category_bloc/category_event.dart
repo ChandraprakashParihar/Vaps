@@ -1,0 +1,3 @@
+class CategoryEvent{
+  const CategoryEvent();
+}
